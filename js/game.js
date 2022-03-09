@@ -209,6 +209,9 @@ const popup = (result) => { //result=0通关；result=1失败；result=2踩到�
 
 
 const start = () => {
+    if(game_on) {
+        return;
+    }
     game_on = 1;
     score = 0;
     time = TIME;
